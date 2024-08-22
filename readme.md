@@ -1,6 +1,6 @@
 # AiLite
 <p align="center" width="80%">
-    <img width="40%" src="./Images/cvpro.png" />
+    <img width="40%" src="AiLite.JPG" />
 </p>
 
 AILite is a cutting-edge autonomous robot designed for a wide range of applications. With its sophisticated four-wheel drive system, integrated camera, ultrasonic sensors, IR sensor, color sensor, and touch sensor, AILite is capable of navigating complex environments with precision and intelligence. 
@@ -222,6 +222,7 @@ Stability: The 4-wheel design offers greater stability, reducing the risk of tip
 Enhanced Sensor Performance: For color sensor-based projects, the 4-wheel construction provides a steadier platform, ensuring more accurate sensor readings and reliable performance.
 Adaptability: Although more complex than the 2-wheel version, the 4-wheel construction can handle the same range of projects, with the added benefit of increased stability and sensor integration.
 
+## Various Execution Options for AILite
 
 In addition to Python, AILite projects can also be developed using MIT App Inventor, a powerful and user-friendly platform for creating mobile applications. MIT App Inventor allows users to design and implement projects through a visual programming interface, making it accessible to those who may not be familiar with traditional coding. Kindly refer the follwing link for more information.
 
