@@ -201,121 +201,29 @@ This Python script allows you to control a robot using data from Color sensor. I
 [Click here to know more](https://github.com/vishnuj1999/AiLIte_python_projects/tree/main/24_Go_Stop)
 
 
-**Note: Avoid pasting the compressed files directly. Make sure to extract the files first.**
-
-## Training Process
-
-Make sure your conda environment for CVPRO is activated by executing the following command:
-
-```bash
-conda activate cvpro
-```
-
-The training process can be visualised either in Python script or in jupyter notebook:
-
-- To start in the Python script, navigate to the folder, `Training_Process` within your local `Meritus-CVPRO` repository. Type or paste the following command in Anaconda Prompt,
-
-```bash
-python main.py
-``` 
-
-- To visualize the same using Jupyter notebook, you can use jupyter notebook file "**main.ipynb**". Type or paste the following command in Anaconda Prompt,
-
-```bash
-jupyter notebook main.ipynb
-```
-
-After training process is complete, the script will generate three files (_best.tflite, last.tflite and label.txt_). The files are saved in the location `Training_Process -> Training_Data -> Save_Model`.
-
-Copy/Move the above three files from computer to smartphone to the folder of your choice.
-
-## Model Management
-
-To upload the model, Open the _CV PRO_ Application in your smartphone and go to `Settings`:gear: icon. Tap on the `Model management` section and click the `upload file` button, select the "***best.tflite*** or ***last.tflite***" from the saved location. 
-
-After the file is uploaded, a menu will appear at the bottom of the screen. From there, you can _change the model's name_ and choose the category in which you want to place the model, from the list of categories displayed. To upload the `label.txt` text file, simply tap on the :paperclip: icon and tap on `Submit` button.
-
-Go to home Screen in _CV PRO_ Application, choose an option among the menu,
-- Click the **Autonomous Driving** to run on autonomous mode.
-- Click the **Image Classification** to classify the image.
-- Click the **Object Detection** to follow an object from the list of objects.
 
 
-# Mecanum
-<p align="center" width="100%">
-    <img width="100%" src="./Images/cvpro-mecanum.png" />
-</p>
+## Types of construction
+## 2-Wheel Construction
 
-# CV Pro with Mecanum Wheels
+The 2-wheel construction is a popular and widely used design in AILite projects. It is favored for its simplicity, agility, and versatility, making it suitable for a broad range of applications. This design features two wheels driven by motors, allowing for straightforward movement and maneuverability. The 2-wheel version is especially well-suited for projects that require quick directional changes, precise navigation, and efficient use of space.
 
-CV Pro is now equipped with the new feature: **`Mecanum wheels`**. Swap the existing wheels with the Mecanum wheels provided. These omnidirectional wheels can move in any direction, offering incredible maneuverability.
+Key Features:
+Versatility: The 2-wheel construction can be applied to a wide variety of projects, ranging from basic robotics to more complex automation tasks.
+Agility: With only two wheels, this design allows for easy turning and swift movement, making it ideal for navigating tight spaces and performing tasks that require quick adjustments.
+Simplicity: The design is simple, making it easier to build, maintain, and modify for different project needs.
 
-## Connection
+## 4-Wheel Construction
 
-## How to Setup the Local Server Connection
-1. Ensure that computer is within proximity and turn-on the CV Pro bot, that acts as the hotspot and check if unique ID of your bot is displayed in the WiFi connection. Establish connection by entering the `WiFi-Name = 'cvpro<unique-ID>' (for example, 'cvpro0123')` and `Wifi-Password = '12345678'`.
+The 4-wheel construction in AILite provides a more stable and robust platform, which is particularly advisable for projects involving color sensors and other sensor-based applications. While the same projects that can be performed with the 2-wheel version can also be executed with the 4-wheel version, the latter offers added stability and support, which is crucial for certain types of sensor-based tasks.
 
-2. Initiating server:
+Key Features:
+Stability: The 4-wheel design offers greater stability, reducing the risk of tipping or imbalance, especially when navigating uneven terrain or carrying additional sensors and equipment.
+Enhanced Sensor Performance: For color sensor-based projects, the 4-wheel construction provides a steadier platform, ensuring more accurate sensor readings and reliable performance.
+Adaptability: Although more complex than the 2-wheel version, the 4-wheel construction can handle the same range of projects, with the added benefit of increased stability and sensor integration.
 
-- For `Windows`, navigate to the folder where the mosquitto package is installed (`C:\ProgramFiles\Mosquitto`). Copy the configuration file, `mqtt_conf.conf` from the `Environment_Setup` folder in local Meritus-CVPRO repository and paste into the Mosquitto installation folder. Open the Command-Prompt/Terminal from this folder. 
 
-    - Type or paste following command and your server will start. 
-
-        ```bash
-        mosquitto -v -c .\mqtt_conf.conf
-        ```
-
-- For `Linux/Ubuntu`, you need not navigate to the installed path or copy the configuration file. Just launch the Terminal,
-
-    - command >> cd '_path to the_ **mqtt_conf.conf** _file which is present in downloaded local `Meritus-CVPRO` repository in folder `Environment_Setup`_'.
-
-    - Type or paste following command and your server will start. 
-
-        ```bash
-        mosquitto -v -c mqtt_conf.conf
-        ```
-
-- For `Mac`, you need not navigate to the installed path or copy the configuration file. Just launch the Terminal,
-
-    - command >> cd '_path to the_ **mqtt_conf.conf** _file which is present in downloaded local `Meritus-CVPRO` repository in folder `Environment_Setup`_'.
-
-    - Type or paste following command and your server will start.  
-
-        ```bash
-        mosquitto -v -c mqtt_conf.conf
-        ```
-
-3. Navigate to the `...\Meritus-CVPRO-main\Controller` directory, from your Anaconda prompt.
-
-4.	To activate your environment,
-- For **Windows**, Open the Anaconda Prompt,
-
-    ```bash
-    conda activate cvpro
-    ```
-
-- For **Linux/Ubuntu**, Open the Terminal,
-
-    ```bash
-    conda activate cvpro
-    ```
-
-- For **Mac**, Open the Terminal, 
-
-    ```bash
-    conda activate cvpro
-    ```
-**Note:** If you receive message `EnvironmentNameNotFound`, after this step, create and activate the environment, by following steps in [Dependencies](#Dependencies).
-
-5.	In Anaconda prompt, run the following command to set your kit in motion:
-
-    ```bash
-    python mecanum_control_bot.py
-    ```
-
-6.	A pygame controller window will appear on your computer screen, allowing you to control your robot using the key combinations provided. Observe your kit's smooth, multidirectional movement.
-
-With CV Pro's new Mecanum wheels, you have expanded possibilities for hands-on learning.
+In addition to Python, AILite projects can also be developed using MIT App Inventor, a powerful and user-friendly platform for creating mobile applications. MIT App Inventor allows users to design and implement projects through a visual programming interface, making it accessible to those who may not be familiar with traditional coding. Kindly refer the follwing link for more information.
 
 
 ## Contact
