@@ -1,0 +1,7 @@
+tensorflow
+opencv-python
+keyboard
+jaxlib==0.4.25
+tensorflow[and-cuda]
+numpy
+requests
